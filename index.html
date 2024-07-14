@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <aside
+      class="side position-fixed top-0 bottom-0 d-flex justify-content-center align-items-center"
+    >
+      <div class="slide-nav min-vh-100 bg-black" style="display: none">
+        <div
+          class="slide-content d-flex justify-content-between flex-column min-vh-100"
+        >
+          <div class="nav-list">
+            <ul>
+              <li id="search">Search</li>
+              <li id="categories">Categories</li>
+              <li id="area">Area</li>
+              <li id="ingredients">Ingredients</li>
+              <li id="contact-us">Contact Us</li>
+            </ul>
+          </div>
+          <div class="nav-footer">
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+              <p class="mb-0">Copyright Â© 2019 All Rights</p>
+              <p>Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navbar bg-white d-flex flex-column justify-content-between align-items-center py-3 min-vh-100"
+      >
+        <img src="./imgs/logo.png" alt="" />
+
+        <i
+          class="fa-solid open-close-icon fa-align-justify fa-2x"
+          style="cursor: pointer"
+          id="openBtn"
+        ></i>
+        <div class="nav-social">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+
+    <section id="meals" class="mt-5">
+      <div class="input-container d-flex justify-content-center mb-3 d-none">
+        <div class="input-div">
+          <div class="input d-flex justify-content-around">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search By Name"
+              id="InputName"
+              aria-describedby="NameHelp"
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search By First letter"
+              id="InputFirstLetter"
+              maxlength="1"
+              aria-describedby="NameHelp"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-4 gy-4"></div>
+      </div>
+    </section>
+    <div
+      class="loading-screen d-none position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
